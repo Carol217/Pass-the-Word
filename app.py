@@ -23,7 +23,7 @@ def hello_world():
     print session
     #this only activates if a session is active
     if 'username' in session:
-        return "welcome john"
+        return "Welcome John <br> <a href = '/logout'> logout </a>"
     else:
         return render_template("login.html")
 
